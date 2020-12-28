@@ -1,0 +1,19 @@
+GET http://localhost:3000/spreadsheet
+
+###
+GET http://localhost:3000/spreadsheet/getDataById
+content-type: application/json
+
+{
+    "id": "070e4e26-d24e-4969-89fe-5212569b25c3"
+}
+
+###
+
+POST http://localhost:3000/spreadsheet/append HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Tokuo",
+    "sex": "Male"
+}
